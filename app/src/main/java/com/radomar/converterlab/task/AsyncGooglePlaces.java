@@ -24,6 +24,11 @@ public class AsyncGooglePlaces extends AsyncTask<String, Void, LatLng> {
 
     private static final String URL = "http://maps.google.com/maps/api/geocode/json";
 
+
+    /**
+     * 1) make request by keywords
+     * 2) parse json string
+     */
     @Override
     protected LatLng doInBackground(String... params) {
 
@@ -45,7 +50,10 @@ public class AsyncGooglePlaces extends AsyncTask<String, Void, LatLng> {
 
         return parseJson(jsonString);
     }
-
+    /**
+     * Get json string by url
+     * @return json string
+     */
     private String getJsonString(String _url) throws IOException {
         URL url = new URL(_url);
 
@@ -71,6 +79,11 @@ public class AsyncGooglePlaces extends AsyncTask<String, Void, LatLng> {
         return null;
     }
 
+    /**
+     * Parse json string
+     *
+     * @return LatLng object (position). Return default value if happened exception
+     */
     private LatLng parseJson(String _jsonString) {
 
         JSONObject rootObject = null;
