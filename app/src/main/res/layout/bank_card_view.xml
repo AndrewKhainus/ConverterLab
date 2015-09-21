@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvBankName_BCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleText"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" />
+
+
+            <TextView
+                android:id="@+id/tvArea_BCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvBankName_BCV"
+                style="@style/SubTitleText"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tvCity_BCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvArea_BCV"
+                android:layout_alignStart="@+id/tvArea_BCV"
+                android:layout_below="@+id/tvArea_BCV"
+                style="@style/SubTitleText"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tvPhoneNumber_BCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvCity_BCV"
+                style="@style/SmallText"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/tvAddress_BCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tvPhoneNumber_BCV"
+                android:layout_alignRight="@+id/tvPhoneNumber_BCV"
+                android:layout_below="@+id/tvPhoneNumber_BCV"
+                style="@style/SmallText"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                style="@style/MyCustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvAddress_BCV" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

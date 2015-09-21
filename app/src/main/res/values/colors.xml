@@ -1,0 +1,24 @@
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#727272</color>
+
+    <color name="background">#ffededed</color>
+    <color name="half_black">#ffc6c6c6</color>
+    <color name="fab_normal">#ffcbd7db</color>
+    <color name="fab_pressed">#ff838f93</color>
+    <color name="fab_menu_normal">#ffea3e7a</color>
+    <color name="white_overlay">#c1fcfcfc</color>
+
+    <color name="tabIndicatorColor">#fffd4287</color>
+    <color name="tabBackground">#ffafbec5</color>
+
+    <color name="green_arrow_up_color">#ff005f63</color>
+    <color name="red_arrow_down_color">#ff870d4e</color>
+
+    <color name="dialog_background">#ff870d4e</color>
+    <color name="dialog_currency_text_color">#ff60012a</color>
+
+</resources>
