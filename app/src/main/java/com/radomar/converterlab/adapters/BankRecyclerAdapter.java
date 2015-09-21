@@ -24,9 +24,6 @@ import java.util.List;
  */
 public class BankRecyclerAdapter extends RecyclerView.Adapter<BankRecyclerAdapter.CustomViewHolder> implements Filterable {
 
-    public static final String KEY_CITY = "key_city";
-    public static final String KEY_ADDRESS = "key_address";
-
     private final Context mContext;
     private List<BankInfoItemModel> mData;
     private List<BankInfoItemModel> mCopyOfData;
