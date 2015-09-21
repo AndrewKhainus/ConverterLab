@@ -43,7 +43,6 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
     private String mCityName;
     private boolean mIsBackGroundTranslucent = false ;
 
-    private Toolbar mToolbar;
     private String mBankId;
     private DatabaseHelper mDbHelper = new DatabaseHelper(this);
 
@@ -130,11 +129,11 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void initToolbar() {
-        mToolbar = (Toolbar) findViewById(R.id.tbToolbar_AD);
-        mToolbar.setTitle(mBankName.getText().toString());
-        mToolbar.setSubtitle(mCityName);
-        setSupportActionBar(mToolbar);
-        mToolbar.setNavigationIcon(R.drawable.ic_arrow);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.tbToolbar_AD);
+        toolbar.setTitle(mBankName.getText().toString());
+        toolbar.setSubtitle(mCityName);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow);
 
     }
 
