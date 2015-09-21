@@ -4,7 +4,6 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
-import android.util.Log;
 
 import com.radomar.converterlab.MainActivity;
 import com.radomar.converterlab.task.AsyncJsonLoader;
@@ -39,11 +38,6 @@ public class DataBaseUpdaterService extends Service {
         return null;
     }
 
-    @Override
-    public void onDestroy() {
-        Log.d("sometag", "onDestroy service");
-        super.onDestroy();
-    }
 
     private void sendBroadcast() {
         Intent intent = new Intent(MainActivity.START_RECYCLER_ADAPTER);
