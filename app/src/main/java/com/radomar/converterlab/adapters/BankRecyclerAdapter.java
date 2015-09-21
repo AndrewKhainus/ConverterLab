@@ -21,6 +21,7 @@ import java.util.List;
 
 /**
  * Created by Radomar on 13.09.2015
+ *  recycler adapter
  */
 public class BankRecyclerAdapter extends RecyclerView.Adapter<BankRecyclerAdapter.CustomViewHolder> implements Filterable {
 

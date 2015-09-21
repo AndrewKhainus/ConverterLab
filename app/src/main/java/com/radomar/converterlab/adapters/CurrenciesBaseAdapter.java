@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Radomar on 19.09.2015
+ * Base adapter. Has more suitable design than recycler adapter
  */
 public class CurrenciesBaseAdapter extends BaseAdapter {
 
