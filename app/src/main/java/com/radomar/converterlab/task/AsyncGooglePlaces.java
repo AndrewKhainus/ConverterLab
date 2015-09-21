@@ -86,9 +86,8 @@ public class AsyncGooglePlaces extends AsyncTask<String, Void, LatLng> {
      */
     private LatLng parseJson(String _jsonString) {
 
-        JSONObject rootObject = null;
         try {
-            rootObject = new JSONObject(_jsonString);
+            JSONObject rootObject = new JSONObject(_jsonString);
             JSONArray results = rootObject.getJSONArray("results");
 
             if (results.length() > 0) {
